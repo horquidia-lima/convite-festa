@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Covite</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="preview">
+            <div class="card-preview">
+                <img src="./img/logo.svg" alt="logo">
+                <h2>Festivite</h2>
+                <p>Crie um convite digital para o seu evento</p>
+                <!--<img src="./img/Background.png" alt="Bolo de aniversário colorido com uma vela">-->
+            </div>
+        </aside>
+        <main class="form-section">
+            <h2>Crie seu convite</h2>
+            <form>
+                <fieldset>
+                    <legend>
+                        <img src="" alt="">
+                        Sobre o evento
+                    </legend>
+                    <label for="title">Título</label>
+                    <input type="text" id="title" placeholder="Nome do evento">
+                    <div class="input-group">
+                        <div class="flex">
+                            <div>
+                                <label for="startDate">Inicio</label>
+                                <input type="date" for="startDate" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+                            <div>
+                                <label for="endDate">Fim</label>
+                                <input type="date" for="endDate" placeholder="DD/MM/AAAA, --:--">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <label for="type">Tipo</label>
+                                <div>
+                                    <input type="radio" id="presencial" name="eventType" value="presencial">
+                                    <label for="presencial">Presencial</label>
+
+                                    <input type="radio" id="online" name="eventType" value="online">
+                                    <label for="online">Online</label>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="local">Local</label>
+                                <input type="text" for="local" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
