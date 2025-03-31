@@ -51,17 +51,6 @@ input {
     padding: 1rem 0px 1rem 1rem;
     margin-top: 0.75rem;
     margin-bottom: 1rem;
-
-    /* Text */
-
-
-/* Auto layout 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 16px;
-gap: 8px;*/
-
 }
 
 input::placeholder {
@@ -71,7 +60,6 @@ input::placeholder {
     font-weight: 400;
     font-size: 1rem;
     line-height: 22px;
-
     color: #869198;
 }
 
@@ -186,7 +174,7 @@ label:has(+ .radio-group) {
     align-items: center;
 }
 
-.radio-group input[type="radio"]{
+input[type="radio"]{
     display: none; /* Esconde o botão radio padrão */
 }
 
@@ -224,6 +212,26 @@ textarea::placeholder {
 
 textarea:focus {
     outline: 2px solid #ff4081; /* Destaque na borda ao focar */
+}
+
+.color-picker {
+    gap: 0.75rem;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.color-circle {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #2D3136;
+}
+
+.color-picker input[type="radio"]:checked + label {
+    border: 2px solid white;
 }
 
 
