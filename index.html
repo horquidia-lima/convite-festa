@@ -21,13 +21,13 @@
             <form>
                 <fieldset>
                     <legend>
-                        <img src="" alt="">
-                        Sobre o evento
+                        <img src="./img/calendar.svg" alt="calendar icon">
+                        <span>Sobre o evento</span>
                     </legend>
                     <label for="title">Título</label>
                     <input type="text" id="title" placeholder="Nome do evento">
-                    <div class="input-group">
-                        <div class="flex">
+                    <div>
+                        <div class="flex input-group">
                             <div>
                                 <label for="startDate">Inicio</label>
                                 <input type="date" for="startDate" placeholder="DD/MM/AAAA, --:--">
@@ -37,15 +37,15 @@
                                 <input type="date" for="endDate" placeholder="DD/MM/AAAA, --:--">
                             </div>
                         </div>
-                        <div class="flex">
+                        <div class="flex input-group">
                             <div>
                                 <label for="type">Tipo</label>
-                                <div>
+                                <div class="flex radio-group">
                                     <input type="radio" id="presencial" name="eventType" value="presencial">
-                                    <label for="presencial">Presencial</label>
-
+                                    <label for="presencial" class="radio-label">Presencial</label>
+                                   
                                     <input type="radio" id="online" name="eventType" value="online">
-                                    <label for="online">Online</label>
+                                    <label for="online" class="radio-label">Online</label>
                                 </div>
                             </div>
                             <div>

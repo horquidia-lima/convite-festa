@@ -8,6 +8,87 @@
     font-size: 16px;
 }
 
+body {
+    color: #F9F9F9;
+    background: #212427;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/*input {
+    all: unset; /* Remove todos os estilos padrão */
+
+
+
+/*input:focus {
+    outline: 2px solid #ff4081;
+}*/
+
+label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 19px;
+    color: #C8CDD0;
+}
+
+input {
+    width: 100%;
+    background: #1C1F21;
+    border: 1px solid #363B40;
+    border-radius: 0.5rem;
+    padding: 1rem 0px 1rem 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+
+    /* Text */
+
+
+/* Auto layout 
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 16px;
+gap: 8px;*/
+
+}
+
+input::placeholder {
+    /* Placeholder */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 22px;
+
+    color: #869198;
+}
+
+input[type="date"] {
+    appearance: none; /* Remove o estilo nativo */
+    -webkit-appearance: none; /* Para navegadores WebKit (Chrome, Safari) */
+    -moz-appearance: none; /* Para Firefox */
+}
+
+
+input:focus {
+    outline: 2px solid #ff4081;
+}
+
+
 .flex {
     display: flex;
 }
@@ -17,8 +98,8 @@
     grid-template-columns: 30% 70%;
     width: 100%;
     max-width: 1220px;
-    margin: auto;
-    /*gap: 10px;*/
+    margin: 0 auto;
+    gap: 0.3125rem;
 }
 
 
@@ -40,30 +121,94 @@ aside {
 }
 
 .card-preview h2 {
-/* Festivite */
-font-family: 'Leckerli One';
-font-style: normal;
-font-weight: 400;
-font-size: 2.5rem;
-line-height: 54px;
-text-transform: capitalize;
+    /* Festivite */
+    font-family: 'Leckerli One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 54px;
+    text-transform: capitalize;
 
-color: #FF598B;
+    color: #FF598B;
 
 }
 
 .card-preview p {
-/* Crie um convite digital para o seu evento */
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 1rem;
-line-height: 22px;
-
-color: #F9F9F9;
-
+    /* Crie um convite digital para o seu evento */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 22px;
 }
 
 main {
     border: 1px solid red;
 }
+
+main h2 {
+/* Crie seu convite */
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 45px;
+    width: 35rem;
+    margin: 5rem auto 2.5rem auto;
+}
+
+form {
+    width: 35rem;
+    margin: auto;
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    gap: 1rem;
+}
+
+.input-group div {
+    flex: 1; /* Faz cada input ocupar 50% do espaço disponível */
+}
+
+label:has(+ .radio-group) {
+    margin-bottom: .8rem;
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    background: #1C1F21; /* Cor de fundo igual ao input */
+    border: 1px solid #333; /* Borda igual ao input */
+    border-radius: 0.5rem;
+    padding: .23rem;
+    align-items: center;
+}
+
+.radio-group input[type="radio"]{
+    display: none; /* Esconde o botão radio padrão */
+}
+
+.radio-group .radio-label {
+    flex: 1;
+    text-align: center;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    gap: 5px; /* Espaço entre ícone e texto */
+}
+
+.radio-group input[type="radio"]:checked + .radio-label {
+    background-color: #869198;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
