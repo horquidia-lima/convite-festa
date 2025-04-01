@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Covite</title>
 </head>
 <body>
@@ -172,7 +175,74 @@
                             <p>Outro</p>
                        </label>
                     </div>
+                    <div class=" estilo">
+                        <div class="group">
+                            <!-- Estilo (Toggle Switch) -->
+                            <label for="dark-mode">Estilo</label>
+                            <div class="toggle-switch flex">
+                                <input type="checkbox" id="dark-mode">
+                                <label for="dark-mode" class="switch"></label>
+                                <span>Escuro</span>
+                            </div>
+                        </div>
+    
+                        <div class="group">
+                            <!-- Foto de capa (Input File) -->
+                            <label for="cover-photo">Foto de capa</label>
+                            <div class="file-upload flex">
+                                <input type="file" id="cover-photo" accept="image/*">
+                                <label for="cover-photo" class="custom-file-button">
+                                    📤 Selecionar
+                                </label>
+                                <span id="file-name">Nenhum arquivo selecionado</span>
+                            </div>
+                        </div>
+                    </div>
                 </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <img src="./img/contacto.svg" alt="contact icon">
+                        <span>Dados para contato</span>
+                    </legend>
+                    <label for="fullName">Nome</label>
+                    <input type="text" id="fullName" placeholder="Nome completo" required>
+                    <div class="flex erro">
+                        <img src="./img/circle-erro.svg" alt="">
+                        <span>Campo obrigatório</span>
+                    </div>
+                    <div class="input-group flex">
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="exemplo@email.com">
+                        </div>
+                        <div>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(99) 99999-9999">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="line"></div>
+
+                <div class="checkbox-group flex">
+                    <label class="checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <span>Li e concordo com os <a href="#">Termos & Condições</a> e com a <a href="#">Política de Privacidade</a></span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="email-updates" required>
+                        <span>Aceito receber atualizações e promoções por e-mail</span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="sms-updates" required>
+                        <span>Aceito receber atualizações e promoções por SMS</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn">
+                    <img src="./img/ticket.svg" alt="ticket icon">Gerar convite
+                </button>
             </form>
         </main>
     </div>

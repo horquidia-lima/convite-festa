@@ -90,7 +90,10 @@ input:focus {
 
 
 aside {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    position: sticky;
+    top: 0; /* Mantém o aside no topo da tela */
+    height: 100vh;
 }
 
 .card-preview {
@@ -129,7 +132,7 @@ aside {
 }
 
 main {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 main h2 {
@@ -146,7 +149,7 @@ main h2 {
 form {
     width: 35rem;
     margin: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 
     display: flex;
     flex-direction: column;
@@ -156,7 +159,7 @@ form {
     gap: 1rem;
 }
 
-.input-group div {
+.input-group div{
     flex: 1; /* Faz cada input ocupar 50% do espaço disponível */
 }
 
@@ -238,6 +241,8 @@ textarea:focus {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 0.35rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .theme-card {
@@ -268,8 +273,179 @@ input[type="radio"]:checked + .theme-card {
     border: 2px solid #ff4081; /* Destaca o tema selecionado */
 }
 
+.estilo {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+}
 
+.file-upload,
+.toggle-switch {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    gap: 0.75rem;
+}
 
+.toggle-switch input[type="checkbox"]{
+    display: none;
+}
+
+.switch {
+    width: 40px;
+    height: 20px;
+    background-color: #1f2937;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.switch::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #6b7280;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked + .switch {
+    background-color: #3b82f6; /* Azul quando ligado */
+}
+
+input[type="checkbox"]:checked + .switch::before {
+    transform: translateX(20px);
+    background-color: white;
+}
+
+span {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    display: none; /* Esconde o input padrão */
+}
+
+.file-upload {
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.custom-file-button {
+    background-color: #1f2937;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 19px;
+    color: #F9F9F9;
+}
+
+.custom-file-label:hover {
+    background-color: #374151;
+}
+
+#file-name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #869198;
+}
+
+#fullName{
+    border: 1px solid #FF5959;
+}
+
+.erro{
+    display: none; /* Oculta a mensagem por padrão */
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.erro span {
+    color: #FF5959;
+    font-size: 0.9rem;
+}
+
+input:invalid + .erro {
+    display: flex; /* Exibe a mensagem se o input estiver inválido */
+}
+
+.erro img {
+    width: 16px; /* Ajusta o tamanho da imagem */
+    height: 16px;
+}
+
+.line {
+    width: 100%;
+    margin: 3rem 0px 3rem 0px;
+    border-top: 1px solid #363B40;
+}
+
+.checkbox-group {
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox input {
+    width: 16px;
+    height: 16px;
+    accent-color: #007bff; /* Cor do checkbox quando marcado */
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+}
+
+.checkbox a {
+    color: #59B2FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilização do botão */
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #1D6FB6;
+    font-weight: 600;
+    line-height: 22px;
+    color: white;
+    padding: 0.25rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    max-width: 11rem;
+    border: none;
+    margin-left: auto;
+    margin-block: 5rem;
+}
+
+/*.checkbox-group input[type="checkbox"]{
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #1C1F21;
+    border: 1px solid #363B40;
+    border-radius: 0.25rem;
+    width: 20px;
+    height: 20px;
+}*/
 
 
 
