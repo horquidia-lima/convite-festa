@@ -25,5 +25,5 @@ O **Covite** é um gerador de convites digitais onde os usuários podem personal
 git clone https://github.com/seu-usuario/covite.git
 2. Abra o arquivo `index.html` no navegador.  
 
+![Recording 2025-04-01 210203](https://github.com/user-attachments/assets/38602f80-a2f4-428e-9350-b1ab2a57cb0b)
 
-![Recording 2025-04-01 210203](https://github.com/user-attachments/assets/164ceea2-0b08-49f0-a4d4-6bb4ff3e1fb3)
