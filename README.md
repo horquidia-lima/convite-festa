@@ -15,11 +15,6 @@ O **Covite** é um gerador de convites digitais onde os usuários podem personal
 - **HTML5**  
 - **CSS3**  
 
-## 📂 Estrutura do Projeto  
-
-📁 Covite ├── 📁 img # Imagens do projeto ├── 📄 index.html # Estrutura do site ├── 📄 style.css # Estilos do site  ├── 📄 README.md # Documentação
-
-
 ## 🔧 Como Executar o Projeto  
 1. Faça o clone do repositório:  
 git clone https://github.com/seu-usuario/covite.git
